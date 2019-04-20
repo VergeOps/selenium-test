@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample" verbose="0" parallel="methods" data-provider-thread-count="1">
+
+	<test name="Example" parallel="methods">
+		 
+		<classes>
+		  <class name="com.automation.selenium.test.TestExample" />
+		</classes> 
+ 
+	</test>
+</suite>
+
