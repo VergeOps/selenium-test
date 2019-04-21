@@ -17,7 +17,7 @@ public class TestExample extends ProjectBaseTest {
 	 * Sample initial test
 	 * 
 	 */
-	@Test()
+	@Test
 	public void testSampleLinkClick() {
 	  
 		HomePage page = new HomePage(getDriver());

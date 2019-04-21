@@ -1,5 +1,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Sample" verbose="0" parallel="methods" data-provider-thread-count="1">
+<suite name="Sample" verbose="0" parallel="methods" thread-count="1" data-provider-thread-count="1">
+
+	<listeners>
+		<listener class-name="com.automation.selenium.core.analyzer.AnnotationTransformer"/>
+		<listener class-name="com.automation.selenium.core.listener.ScreenshotExtentListener"/>
+	</listeners>
 
 	<test name="Example" parallel="methods">
 		 

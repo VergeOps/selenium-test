@@ -6,6 +6,9 @@
 .settings/
 .DS_Store
 
+/html_report/
+/testng.xml
+
 # Log file
 *.log
 

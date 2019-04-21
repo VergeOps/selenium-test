@@ -19,7 +19,6 @@
 	<surefire.version>2.22.1</surefire.version>
 	<javadoc.version>3.1.0</javadoc.version>
 	<core.version>0.0.1-SNAPSHOT</core.version>
-	<num.threads>1</num.threads>
 	<suiteXmlFile>testng.xml</suiteXmlFile>
 	<maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
@@ -74,30 +73,8 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>src/test/resources/${suiteXmlFile}</suiteXmlFile>
 						</suiteXmlFiles>
-						<parallel>methods</parallel>
 						<failIfNoTests>true</failIfNoTests>
 						<continueOnError>true</continueOnError>	            
-						<properties>
-						   <property>
-						     <name>threadCount</name>
-						     <value>${num.threads}</value>
-						   </property>
-						   <property>
-						     <name>dataproviderthreadcount</name>
-						     <value>${num.threads}</value>
-						   </property>
-							<property>
-								<name>usedefaultlisteners</name>
-								<value>false</value>
-							</property>
-							<property>
-								<name>listener</name>
-								<value>
-									com.automation.selenium.core.analyzer.AnnotationTransformer,
-									com.automation.selenium.core.listener.ScreenshotExtentListener
-								</value>
-							</property>
-						</properties>
 						<workingDirectory>target/surefire-reports/</workingDirectory>
 					</configuration>
 					<executions>
