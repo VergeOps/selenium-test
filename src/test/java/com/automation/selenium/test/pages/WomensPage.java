@@ -16,7 +16,7 @@ public class WomensPage extends BasePage {
 	* Constructs an instance of the page object
 	* @param driver Active WebDriver
 	*/
-	protected WomensPage(WebDriver driver) {
+	public WomensPage(WebDriver driver) {
 		super(driver);
 	}
 
