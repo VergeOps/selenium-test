@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import com.automation.selenium.core.BasePage;
+import com.automation.selenium.test.pages.product.DressesPage;
 
 /**
  * Page object container for practice site home page
@@ -14,9 +15,11 @@ import com.automation.selenium.core.BasePage;
  */
 public class HomePage extends BasePage {
   
-
 	@FindBy (linkText="Women")
 	private WebElement lnkWomen;
+	
+	@FindBy (xpath="(//a[text()='Dresses'])[2]")
+	private WebElement lnkDresses;
     
 	/**
 	* Constructs an instance of the page object
@@ -36,6 +39,18 @@ public class HomePage extends BasePage {
 	  getReporter().info("Clicked Women's Page");
 	  
 	  return new WomensPage(getDriver());
+  }
+  
+  /**
+   * Clicks the Dresses page link on the HomePage
+   * @return DressesPage
+   */
+  public DressesPage clickDresses() {
+	  click(lnkDresses);
+	  
+	  getReporter().info("Clicked Dresses Page");
+	  
+	  return new DressesPage(getDriver());
   }
  
   

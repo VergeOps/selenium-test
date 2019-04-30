@@ -8,9 +8,9 @@
 
 	<test name="Example" parallel="methods">
 		 
-		<classes>
-		  <class name="com.automation.selenium.test.TestExample" />
-		</classes> 
+		<packages>
+		  <package name="com.automation.selenium.test" />
+		</packages> 
  
 	</test>
 </suite>
