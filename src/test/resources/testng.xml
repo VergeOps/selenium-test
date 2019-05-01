@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Sample" verbose="0" parallel="methods" thread-count="1" data-provider-thread-count="1">
+<suite name="Sample" verbose="0" parallel="methods" thread-count="3" data-provider-thread-count="3">
 
 	<listeners>
 		<listener class-name="com.automation.selenium.core.analyzer.AnnotationTransformer"/>
@@ -8,10 +8,10 @@
 
 	<test name="Example" parallel="methods">
 		 
-		<packages>
-		  <package name="com.automation.selenium.test" />
-		</packages> 
- 
+		<classes>
+		  <class name="com.automation.selenium.test.TestLogin" />
+		</classes> 
+
 	</test>
 </suite>
 

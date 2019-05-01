@@ -12,7 +12,7 @@ public class TestAddToCart extends ProjectBaseTest {
 	 * Sample add to cart test
 	 * 
 	 */
-	@Test
+	@Test(testName = "Add to Cart", groups = {"cart", "checkout", "wip"})
 	public void testAddToCart() {
 	  
 		HomePage page = new HomePage(getDriver());
